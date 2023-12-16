@@ -609,7 +609,9 @@ Copyright 2023 &amp; Espalda Libre. Todos los derechos reservados. El contenido 
 /></noscript>
 <!-- End Meta Pixel Code -->
 <script>
-    let prefix = ["https://payment.hotmart.com/","https://pay.hotmart.com/"];
+
+<script>
+    let prefix = ["https://payment.hotmart.com", "https://pay.hotmart.com"];
 
 function getParams() {
     let t = "",
@@ -629,5 +631,6 @@ function getParams() {
         for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
     })
 }();
-
+</script>
+	
 </body></html>
